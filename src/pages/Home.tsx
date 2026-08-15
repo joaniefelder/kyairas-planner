@@ -8,7 +8,7 @@ import { VerseCard } from '../components/VerseCard';
 import { Button } from '../components/ui/Button';
 import { TaskFormModal } from '../components/TaskFormModal';
 import { EventFormModal } from '../components/EventFormModal';
-import { CherryBlossomBranch, PeonyBloom } from '../components/Flowers';
+import { CherryBlossomBranch } from '../components/Flowers';
 
 export function Home() {
   const { data } = useAppData();
@@ -106,10 +106,6 @@ export function Home() {
 
         <div className="lg:col-span-2">
           <VerseCard verse={verse} />
-          <div className="relative mt-6 overflow-hidden rounded-3xl border border-blush-150 bg-white/60 p-6 text-center shadow-[var(--shadow-soft)]">
-            <PeonyBloom className="pointer-events-none absolute -bottom-6 -left-6 h-24 w-24 opacity-60" />
-            <p className="relative font-script text-2xl text-blush-700">Made with love, just for Kyaira ♡</p>
-          </div>
         </div>
       </section>
 
